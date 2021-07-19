@@ -1,0 +1,96 @@
+.chakra-divider {
+  margin-top: 2rem;
+}
+.detailTitle {
+  margin: 1rem 0;
+}
+
+.PropertyDetailContainer {
+  width: 90%;
+  margin: auto;
+  position: relative;
+  min-height: 90vh;
+  margin-bottom: 2rem;
+  .title {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    margin: 1rem;
+    .chakra-button {
+      svg {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+  .address {
+    text-align: center;
+    margin-bottom: 1rem;
+    svg {
+      display: inline-block;
+    }
+  }
+  .imgPanel {
+    height: 100%;
+    .imgItem {
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 5%;
+      }
+    }
+  }
+  .amenityPanel {
+    .hotel,
+    .room {
+      border-radius: 2vw;
+      padding: 1rem;
+      border: 0.1rem groove lightgrey;
+      //box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+      p {
+        text-align: center;
+        width: fit-content;
+        margin: 1rem auto;
+        padding: 0.5rem;
+        border-bottom: 0.1rem solid lightgrey;
+      }
+      ul {
+        list-style: none;
+        li {
+          svg {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+  .roomTypePanel {
+    .roomInfo {
+      border: 0.1rem solid gray;
+      padding: 1rem;
+      margin: 1rem;
+      border-radius: 1vw;
+      .room {
+        font-size: 1.3rem;
+      }
+      p {
+        svg {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+.loading {
+  font-size: 2rem;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.chakra-spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

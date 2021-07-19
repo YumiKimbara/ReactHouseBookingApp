@@ -1,0 +1,174 @@
+.mainImage {
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+  align-items: center;
+  text-align: center;
+  height: calc(100vh - 90px);
+  h1 {
+    font-size: 32px;
+    margin-bottom: 1rem;
+  }
+}
+
+.section {
+  padding: 3rem;
+}
+
+.subTitle {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.cityImage {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgb(0 0 0 / 30%);
+}
+
+.exploreNearbyContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cityContainer {
+  display: flex;
+  margin: 0 2rem 2rem 0;
+}
+
+.cityDescription {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+}
+
+.liveAnywhereContainer {
+  display: flex;
+}
+
+.categoryContainer {
+  width: 50%;
+  span {
+    font-size: 1.3rem;
+  }
+}
+
+.categoryImage {
+  width: 90%;
+  height: 300px;
+  margin: 0 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgb(0 0 0 / 30%);
+}
+
+.tryHostingContainer {
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.tryHostingBgImage {
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgb(0 0 0 / 30%);
+  position: relative;
+  height: 50vh;
+}
+
+.tryHostingDescription {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  text-align: center;
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: white;
+  }
+}
+
+@media (max-width: 1024px) {
+  .mainImage {
+    height: calc(50vh - 90px);
+  }
+  .tryHostingBgImage {
+    height: 30vh;
+  }
+  .categoryImage {
+    height: 20vh;
+  }
+}
+
+@media (max-width: 599px) {
+  .mainImage {
+    height: calc(70vh - 90px);
+  }
+  .cityContainer {
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    .cityImage {
+      margin: 0 auto;
+    }
+    span {
+      font-size: 0.6rem;
+    }
+  }
+  .cityDescription {
+    padding: 0 0.5rem;
+    span {
+      width: 80%;
+      text-align: center;
+    }
+  }
+  .categoryImage {
+    height: 14vh;
+  }
+  .tryHostingBgImage {
+    height: 25vh;
+  }
+  .tryHostingDescription {
+    top: 26%;
+  }
+  .categoryContainer {
+    span {
+      font-size: 0.6rem;
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  .cityContainer {
+    margin-bottom: 1rem;
+    .cityImage {
+      margin: 0 1rem 0.5rem 1rem;
+    }
+  }
+  .categoryImage {
+    height: 14vh;
+  }
+
+  .subTitle {
+    font-size: 1.3rem;
+  }
+  .section {
+    padding: 2rem 1rem;
+  }
+  .tryHostingContainer {
+    padding: 3rem 1.5rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .categoryImage {
+    height: 13vh;
+  }
+  .tryHostingBgImage {
+    height: 20vh;
+  }
+  .tryHostingDescription {
+    top: 15%;
+  }
+}

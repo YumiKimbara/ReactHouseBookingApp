@@ -1,0 +1,53 @@
+.headerContainer {
+  padding: 1.5rem 0;
+  width: 100%;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  color: #484848;
+  height: 90px;
+}
+
+.input {
+  height: 2.5rem;
+  width: 80%;
+  border-radius: 50px;
+  border: 1px solid #ffffff;
+  padding-left: 1rem;
+  position: relative;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+input[type="search"]:focus {
+  outline: 0;
+}
+
+.searchIcon {
+  position: absolute;
+  right: 42vw;
+  top: 4vh;
+  font-size: 1.3rem;
+  color: #484848;
+}
+
+.headerRight {
+  text-align: end;
+}
+
+.headerRight span {
+  margin: 0 1.5rem;
+  cursor: pointer;
+}
+
+.logo {
+  width: 3vw;
+  margin: 0 1.5rem;
+}
+
+.icon {
+  margin: 0 1.5rem;
+  font-size: 1.3rem;
+  color: #484848;
+  cursor: pointer;
+}
+/*# sourceMappingURL=Header.css.map */

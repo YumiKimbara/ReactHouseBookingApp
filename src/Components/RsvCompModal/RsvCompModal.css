@@ -1,0 +1,50 @@
+.modalMsg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.modalMsg .compMsg {
+  text-align: center;
+}
+
+.modalMsg .compMsg svg {
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+
+.modalMsg .backHomeBtn {
+  display: block;
+  margin: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: teal;
+  color: white;
+  padding: 0.7rem 1rem;
+  border-radius: 1vw;
+}
+
+.modalMsg .backHomeBtn:hover {
+  background: var(--chakra-colors-gray-200);
+  color: black;
+  border: 0.1rem solid teal;
+}
+/*# sourceMappingURL=RsvCompModal.css.map */
+
+@media (max-width: 540px) {
+  .modalMsg .backHomeBtn {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    padding: 0.5rem 0.6rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 375px) {
+  .modalMsg .backHomeBtn {
+    font-size: 0.7rem;
+  }
+}

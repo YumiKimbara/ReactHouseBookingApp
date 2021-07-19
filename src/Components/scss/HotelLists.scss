@@ -1,0 +1,30 @@
+.placeOfStay {
+  margin: 3rem 9rem;
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+}
+
+.allCardContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 3rem;
+}
+
+@media (max-width: 599px) {
+  .placeOfStay {
+    text-align: center;
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .placeOfStay {
+    margin: 2rem 3rem;
+  }
+}

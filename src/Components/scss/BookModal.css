@@ -1,0 +1,15 @@
+.input {
+  height: 2.5rem;
+  width: 80%;
+  border-radius: 50px;
+  border: 1px solid #ffffff;
+  padding-left: 1rem;
+  position: relative;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+input[type="text"]:focus {
+  outline: 0;
+}
+/*# sourceMappingURL=BookModal.css.map */

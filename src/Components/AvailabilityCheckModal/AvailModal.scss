@@ -1,0 +1,124 @@
+.PropertyDetailContainer {
+  .availBtn {
+    position: sticky;
+    display: block;
+    bottom: 20px;
+    margin-left: auto;
+  }
+}
+.modalContainer {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.689);
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  .modalContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    width: 70vw;
+    min-height: 80vh;
+    border-radius: 3vw;
+    padding: 2rem;
+    overflow-y: auto;
+    p {
+      margin-bottom: 1rem;
+    }
+    .clsBtn {
+      position: absolute;
+      top: 5%;
+      right: 5%;
+      font-size: 2rem;
+      background-color: transparent;
+      border: none;
+      &:hover {
+        color: teal;
+      }
+    }
+    form {
+      .dateSelect {
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        align-items: center;
+        .react-datepicker {
+          display: flex;
+        }
+      }
+      .chakra-form-control {
+        margin-bottom: 1rem;
+        input {
+          border: 0.2rem solid lightgrey;
+          border-radius: var(--chakra-radii-md);
+          padding: 0.5rem;
+          &:focus {
+            border-color: teal;
+            outline: none;
+          }
+        }
+        .chakra-numberinput {
+          width: 50%;
+        }
+        .roomTypeInput {
+          display: flex;
+          justify-content: flex-start;
+          flex-direction: row;
+          align-items: center;
+          grid-gap: 1rem;
+          margin-bottom: 1rem;
+          input,
+          select {
+            border: 0.2rem solid lightgrey;
+            &:focus {
+              border: 0.2rem solid teal;
+              outline: none;
+            }
+          }
+        }
+      }
+      .error {
+        background: rgb(247, 201, 208);
+        padding: 0.5rem 1rem;
+        color: red;
+        font-weight: bold;
+        svg {
+          display: inline-block;
+        }
+      }
+      .btns {
+        position: absolute;
+        bottom: 5%;
+        right: 5%;
+        .submitBtn,
+        .checkOutBtn {
+          border: 0.1rem solid teal;
+          margin: 0.5rem;
+          &:hover {
+            background-color: teal;
+            color: white;
+          }
+        }
+      }
+    }
+    .pricePanel {
+      border-radius: 3vw;
+      padding: 1rem 2rem;
+      margin: 2rem 0;
+      width: 50%;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+        rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+      .total {
+        font-size: 1.5rem;
+        font-weight: bold;
+        span {
+          color: palevioletred;
+        }
+      }
+    }
+  }
+}

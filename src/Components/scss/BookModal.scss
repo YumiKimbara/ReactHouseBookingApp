@@ -1,0 +1,72 @@
+.input {
+  height: 2.5rem;
+  width: 80%;
+  border-radius: 50px;
+  border: 1px solid #ffffff;
+  padding-left: 1rem;
+  position: relative;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+input[type="text"]:focus {
+  outline: 0;
+}
+
+#location {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.chackInOutContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.checkInContainer {
+  display: flex;
+  flex-direction: column;
+  padding-right: 1rem;
+}
+
+.checkOutContainer {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+}
+
+#myStartDate {
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+#myEndDate {
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.errorMsg {
+  padding: 1rem;
+  color: red;
+}
+
+@media (max-width: 599px) {
+  .input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 414px) {
+  .input {
+    font-size: 0.7rem;
+  }
+  input {
+    width: 90%;
+  }
+  .modalContent {
+    width: 80%;
+  }
+  .css-hxtskf {
+    width: 80%;
+  }
+}

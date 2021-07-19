@@ -1,0 +1,27 @@
+.modalMsg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  .compMsg {
+    text-align: center;
+    svg {
+      display: inline-block;
+      margin-left: 0.5rem;
+    }
+  }
+  .backHomeBtn {
+    display: block;
+    margin: auto;
+    width: fit-content;
+    background-color: teal;
+    color: white;
+    padding: 0.7rem 1rem;
+    border-radius: 1vw;
+    &:hover {
+      background: var(--chakra-colors-gray-200);
+      color: black;
+      border: 0.1rem solid teal;
+    }
+  }
+}
